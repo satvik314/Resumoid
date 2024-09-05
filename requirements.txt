@@ -5,3 +5,4 @@ python-dotenv
 pypdf2
 openai
 streamlit-aggrid
+langchain-community
