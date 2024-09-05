@@ -247,7 +247,7 @@ def main():
     if resume_pdf and job_description and submit:
         resume_text = read_pdf(resume_pdf)
         resume_info = extract_info(resume_text)
-        gpt4_model = ChatOpenAI(model='gpt-3.5-turbo-16k')
+        gpt4_model = ChatOpenAI(model='gpt-4o-mini')
         resume_scores = llm_scoring(llm=gpt4_model, resume_text=resume_text, job_description=job_description)
 
         st.divider()
